@@ -35,13 +35,9 @@ def main():
 	x = np.array([0, 1])
 	for i in range(0, 1000):
 		b, m = stepGradient(learning_rate, b, m, x_normalized, y_normalized)
-	print(b, m)
 	m = m * (max(y_data) - min(y_data)) / (max(x_data) - min(x_data))
-	
-	# x = np.array([0, 1])
-	# y = m * x + b
-	# plt.plot(x, y)
-	# plt.show()
+	b = denormalize(b, y_data) + min(x_data) * -m
+	print(b, m)
 
 if __name__ == '__main__':
 	main()
