@@ -1,7 +1,6 @@
 theta0 = 8499.599649933216
 theta1 = -0.0214489635917023
 
-
 def main():
 	global theta0, theta1
 	mileage = input("Enter a mileage: ")
