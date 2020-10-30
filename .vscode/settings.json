@@ -1,0 +1,5 @@
+{
+  "python.linting.pylintEnabled": true,
+  "python.linting.enabled": true,
+  "python.pythonPath": "/home/wta/.local/share/virtualenvs/ft_linear_regression-DffILmWs/bin/python"
+}
